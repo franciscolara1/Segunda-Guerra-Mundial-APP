@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar color="warning">
+    <ion-title>Políticos y Dictadores</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="dictadores"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid style="background-color: antiquewhite;">
+    <ion-row>
+      <ion-col>
+        <div *ngIf="dictador">
+          <ion-card color="success">
+            <ion-card-content>
+              <img src="{{dictador.imagen}}" alt="">
+              <br/>
+              <ion-card-title>
+                {{dictador.name}}
+              </ion-card-title>
+              <p style="margin-top:3px;text-align: justify;">{{dictador.descripcion}}</p>
+            </ion-card-content>
+          </ion-card>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

@@ -1,0 +1,14 @@
+ion-menu::part(backdrop) {
+    background-color: rgb(194, 247, 0);
+  }
+  
+ion-menu::part(container) {
+    border-radius: 20px 0 0 20px;
+  
+    
+  }
+ion-title{
+  text-align: left;
+  margin-left:10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

@@ -1,0 +1,46 @@
+
+.titulo-principal{
+  color:black;
+  font-family:fantasy;
+  text-align:left;
+  
+}
+.titulo-ios{
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 24px;
+}
+.imagen{
+  width:330px; 
+  height: 300px;
+  position:relative;
+  bottom:20px;
+  
+}
+
+#background{
+  background-color:antiquewhite;
+  padding-top: 10px;
+  
+}
+.texto{
+  position:relative;
+  top:300px;
+  margin:10px;
+}
+.relleno{
+  background-color: antiquewhite;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  
+}
+.relleno > p{
+  margin:10px;
+}
+ion-content{
+  background-color: red;
+}
+hr{
+  background:darkgrey;
+  width:270px;
+}

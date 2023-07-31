@@ -1,0 +1,59 @@
+<ion-header>
+  <ion-toolbar color="warning">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Cuestionario</ion-title>
+    <!-- Menu Buton -->
+    <ion-buttons slot="end">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <p class="test">Test</p>
+  <h3>¿CUANTO SABES SOBRE LA SEGUNDA GUERRA MUNDIAL?</h3>
+  <p class="subtitulo">Demuestra tus conocimientos sobre la mayor contienda militar de la historia</p>
+    <div class="container">
+      <p class="numero">1 / 10</p>
+      <h1 class="titulo-cuestionario"id="cambio">¿COMÓ COMENZÓ LA SEGUNDA GUERRA MUNDIAL?</h1>
+      <ion-radio-group value="primerPregunta">
+        <ion-item>
+          <ion-text>Invasión a la URSS de parte de Alemania.</ion-text>
+          <ion-radio slot="start" value="1.1"(click)="incorrect=true"(click)="show=false"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-text>Comenzó con un pacto firmado por Japón,Alemania e Italia.</ion-text>
+          <ion-radio slot="start" value="1.2"(click)="incorrect=true"(click)="show=false"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-text>Comenzó con la invasión de Polonia por parte de Alemania</ion-text>
+          <ion-radio slot="start" value="1.3"(click)="show=true"(click)="incorrect=false"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+      <p *ngIf="show"style="color:green;margin-left: 80px;">Correcto!!</p>
+      <p *ngIf="incorrect"style="color:red;margin-left: 80px;">Respuesta incorrecta!!</p>
+    </div>
+    <div class="container">
+      <p id="cambio"class="numero">2 / 10</p>
+      <h1 class="titulo-cuestionario">¿COMÓ COMENZÓ LA SEGUNDA GUERRA MUNDIAL?</h1>
+      <ion-radio-group value="segundaPregunta">
+        <ion-item>
+          <ion-text>Invasión a la URSS de parte de Alemania.</ion-text>
+          <ion-radio slot="start" value="1.1"(click)="incorrect=true"(click)="show=false"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-text>Comenzó con un pacto firmado por Japón,Alemania e Italia.</ion-text>
+          <ion-radio slot="start" value="1.2"(click)="incorrect=true"(click)="show=false"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-text>Comenzó con la invasión de Polonia por parte de Alemania</ion-text>
+          <ion-radio slot="start" value="1.3"(click)="show=true"(click)="incorrect=false"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+      <p *ngIf="show"style="color:green;margin-left: 80px;">Correcto!!</p>
+      <p *ngIf="incorrect"style="color:red;margin-left: 80px;">Respuesta incorrecta!!</p>
+      <ion-button style="margin-left: 35%;margin-top: 20px;">Enter</ion-button>
+    </div>
+</ion-content>

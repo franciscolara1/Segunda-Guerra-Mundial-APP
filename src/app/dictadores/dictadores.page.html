@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar color="warning">
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref="home"></ion-back-button>
+      </ion-buttons>
+      <ion-title>Políticos y dictadores</ion-title>
+      <!-- Menu Buton -->
+      <ion-buttons slot="end">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let dictador of dictadores" lines="full" [routerLink]="['/profile/'+ dictador.id]">
+      <ion-avatar slot="start">
+        <img src="{{dictador.imagen}}" alt="">
+      </ion-avatar>
+      <ion-label>{{dictador.name}}</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
