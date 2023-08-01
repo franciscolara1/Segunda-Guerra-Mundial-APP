@@ -3,6 +3,16 @@ ion-card{
     margin-right: auto;
     text-align: center;
 }
+ion-card-title{
+    margin-top:20px;
+}
 ion-title{
     font-family: 'Times New Roman', Times, serif;
+}
+
+@media only screen and (min-width:1300px){
+    ion-card{
+        width:500px;
+        
+    }
 }

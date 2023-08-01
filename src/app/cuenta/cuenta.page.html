@@ -37,19 +37,41 @@
     </div>
     <div class="container">
       <p id="cambio"class="numero">2 / 10</p>
-      <h1 class="titulo-cuestionario">¿COMÓ COMENZÓ LA SEGUNDA GUERRA MUNDIAL?</h1>
+      <h1 class="titulo-cuestionario">¿EN QUÉ AÑO ACCEDIÓ HITLER Y EL PARTIDO NACIONAL-SOCIALISTA AL PODER?</h1>
       <ion-radio-group value="segundaPregunta">
         <ion-item>
-          <ion-text>Invasión a la URSS de parte de Alemania.</ion-text>
-          <ion-radio slot="start" value="2.1"(click)="incorrect2=true"(click)="show2=false"></ion-radio>
+          <ion-text>1933</ion-text>
+          <ion-radio slot="start" value="2.1"(click)="incorrect2=false"(click)="show2=true"></ion-radio>
         </ion-item>
         <ion-item>
-          <ion-text>Comenzó con un pacto firmado por Japón,Alemania e Italia.</ion-text>
+          <ion-text>1936</ion-text>
           <ion-radio slot="start" value="2.2"(click)="incorrect2=true"(click)="show2=false"></ion-radio>
         </ion-item>
         <ion-item>
-          <ion-text>Comenzó con la invasión de Polonia por parte de Alemania</ion-text>
-          <ion-radio slot="start" value="2.3"(click)="show2=true"(click)="incorrect2=false"></ion-radio>
+          <ion-text>1939</ion-text>
+          <ion-radio slot="start" value="2.3"(click)="show2=false"(click)="incorrect2=true"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+      <p *ngIf="show2"style="color:green;margin-left: 80px;">Correcto!!</p>
+      <p *ngIf="incorrect2"style="color:red;margin-left: 80px;">Respuesta incorrecta!!</p>
+      <ion-button style="margin-left: 35%;margin-top: 20px;">Enter</ion-button>
+    </div>
+    <div class="container">
+      <p id="cambio"class="numero">3 / 10</p>
+      <h1 class="titulo-cuestionario">¿CON QUÉ NOMBRE FUE CONOCIDO EL PACTO DE NO AGRESIÓN ENTRE ALEMANES Y SOVIÉTICOS?
+      </h1>
+      <ion-radio-group value="segundaPregunta">
+        <ion-item>
+          <ion-text>Pacto Ribbentrop-Mólotov</ion-text>
+          <ion-radio slot="start" value="2.1"(click)="incorrect2=false"(click)="show2=true"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-text>Pacto de Varsovia</ion-text>
+          <ion-radio slot="start" value="2.2"(click)="incorrect2=true"(click)="show2=false"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-text>Pacto de Brandeburgo</ion-text>
+          <ion-radio slot="start" value="2.3"(click)="show2=false"(click)="incorrect2=true"></ion-radio>
         </ion-item>
       </ion-radio-group>
       <p *ngIf="show2"style="color:green;margin-left: 80px;">Correcto!!</p>
