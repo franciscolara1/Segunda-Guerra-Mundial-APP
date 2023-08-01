@@ -41,19 +41,19 @@
       <ion-radio-group value="segundaPregunta">
         <ion-item>
           <ion-text>Invasión a la URSS de parte de Alemania.</ion-text>
-          <ion-radio slot="start" value="1.1"(click)="incorrect=true"(click)="show=false"></ion-radio>
+          <ion-radio slot="start" value="2.1"(click)="incorrect2=true"(click)="show2=false"></ion-radio>
         </ion-item>
         <ion-item>
           <ion-text>Comenzó con un pacto firmado por Japón,Alemania e Italia.</ion-text>
-          <ion-radio slot="start" value="1.2"(click)="incorrect=true"(click)="show=false"></ion-radio>
+          <ion-radio slot="start" value="2.2"(click)="incorrect2=true"(click)="show2=false"></ion-radio>
         </ion-item>
         <ion-item>
           <ion-text>Comenzó con la invasión de Polonia por parte de Alemania</ion-text>
-          <ion-radio slot="start" value="1.3"(click)="show=true"(click)="incorrect=false"></ion-radio>
+          <ion-radio slot="start" value="2.3"(click)="show2=true"(click)="incorrect2=false"></ion-radio>
         </ion-item>
       </ion-radio-group>
-      <p *ngIf="show"style="color:green;margin-left: 80px;">Correcto!!</p>
-      <p *ngIf="incorrect"style="color:red;margin-left: 80px;">Respuesta incorrecta!!</p>
+      <p *ngIf="show2"style="color:green;margin-left: 80px;">Correcto!!</p>
+      <p *ngIf="incorrect2"style="color:red;margin-left: 80px;">Respuesta incorrecta!!</p>
       <ion-button style="margin-left: 35%;margin-top: 20px;">Enter</ion-button>
     </div>
 </ion-content>

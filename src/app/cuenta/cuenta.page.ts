@@ -8,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class CuentaPage  {
 
     show:boolean;
+    show2:boolean;
     incorrect:boolean;
+    incorrect2:boolean;
     constructor(){}
 }
 
