@@ -59,22 +59,65 @@
       <p id="cambio"class="numero">3 / 10</p>
       <h1 class="titulo-cuestionario">¿CON QUÉ NOMBRE FUE CONOCIDO EL PACTO DE NO AGRESIÓN ENTRE ALEMANES Y SOVIÉTICOS?
       </h1>
-      <ion-radio-group value="segundaPregunta">
+      <ion-radio-group value="terceraPregunta">
         <ion-item>
           <ion-text>Pacto Ribbentrop-Mólotov</ion-text>
-          <ion-radio slot="start" value="2.1"(click)="incorrect2=false"(click)="show2=true"></ion-radio>
+          <ion-radio slot="start" value="2.1"(click)="incorrect3=false"(click)="show3=true"></ion-radio>
         </ion-item>
         <ion-item>
           <ion-text>Pacto de Varsovia</ion-text>
-          <ion-radio slot="start" value="2.2"(click)="incorrect2=true"(click)="show2=false"></ion-radio>
+          <ion-radio slot="start" value="2.2"(click)="incorrect3=true"(click)="show3=false"></ion-radio>
         </ion-item>
         <ion-item>
           <ion-text>Pacto de Brandeburgo</ion-text>
-          <ion-radio slot="start" value="2.3"(click)="show2=false"(click)="incorrect2=true"></ion-radio>
+          <ion-radio slot="start" value="2.3"(click)="show3=false"(click)="incorrect3=true"></ion-radio>
         </ion-item>
       </ion-radio-group>
-      <p *ngIf="show2"style="color:green;margin-left: 80px;">Correcto!!</p>
-      <p *ngIf="incorrect2"style="color:red;margin-left: 80px;">Respuesta incorrecta!!</p>
-      <ion-button style="margin-left: 35%;margin-top: 20px;">Enter</ion-button>
+      <p *ngIf="show3"style="color:green;margin-left: 80px;">Correcto!!</p>
+      <p *ngIf="incorrect3"style="color:red;margin-left: 80px;">Respuesta incorrecta!!</p>
+    </div>
+    <div class="container">
+      <p id="cambio"class="numero">4 / 10</p>
+      <h1 class="titulo-cuestionario">¿EN QUÉ CONSISTÍA LA "GUERRA RELÁMPAGO" O BLITZKRIEG LLEVADA A CABO POR LOS ALEMANES?
+      </h1>
+      <ion-radio-group value="cuartaPregunta">
+        <ion-item>
+          <ion-text>Consistía en la acción coordinada de unidades de artillería, 
+            blindadas, aviación y comunicaciones para debilitar rápidamente las defensas del enemigo</ion-text>
+          <ion-radio slot="start" value="2.1"(click)="incorrect4=false"(click)="show4=true"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-text>Consistía en atacar los objetivos clave siempre coincidiendo con tormentas
+             y mal tiempo para mermar más fácilmente las defensas del enemigo</ion-text>
+          <ion-radio slot="start" value="2.2"(click)="incorrect4=true"(click)="show4=false"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-text>Consistía en usar armas químicas junto con bombardeos continuos</ion-text>
+          <ion-radio slot="start" value="2.3"(click)="show4=false"(click)="incorrect4=true"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+      <p *ngIf="show4"style="color:green;margin-left: 80px;">Correcto!!</p>
+      <p *ngIf="incorrect4"style="color:red;margin-left: 80px;">Respuesta incorrecta!!</p>
+    </div>
+    <div class="container">
+      <p id="cambio"class="numero">5 / 10</p>
+      <h1 class="titulo-cuestionario">HITLER SUFRIÓ MUCHOS ATENTADOS (TODOS ELLOS FALLIDOS). ¿CUÁNTOS EXACTAMENTE?
+      </h1>
+      <ion-radio-group value="cuartaPregunta">
+        <ion-item>
+          <ion-text>23</ion-text>
+          <ion-radio slot="start" value="2.1"(click)="incorrect5=true"(click)="show5=false"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-text>32</ion-text>
+          <ion-radio slot="start" value="2.2"(click)="incorrect5=true"(click)="show5=false"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-text>43</ion-text>
+          <ion-radio slot="start" value="2.3"(click)="show5=true"(click)="incorrect5=false"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+      <p *ngIf="show5"style="color:green;margin-left: 80px;">Correcto!!</p>
+      <p *ngIf="incorrect5"style="color:red;margin-left: 80px;">Respuesta incorrecta!!</p>
     </div>
 </ion-content>
