@@ -33,3 +33,24 @@ h3{
 .marca:focus{
     background-color: red;
 }
+.preguntas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 17px;
+    padding-left: 3px;
+    margin-left: 6px;
+    
+}
+ion-toolbar > ul > div{
+    cursor: pointer;
+    color:black;
+    height: 34px;
+    width: 28px;
+    border-radius: 100%;
+    font-size: 20px;
+    text-align: center;
+    margin:1px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.5);
+    
+}

@@ -9,6 +9,21 @@
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
   </ion-toolbar>
+  <!-- Respuestas-->
+  <ion-toolbar>
+    <ul class="preguntas">
+      <div class="pregunta1">1</div>
+      <div class="pregunta2">2</div>
+      <div class="pregunta3">3</div>
+      <div class="pregunta4">4</div>
+      <div class="pregunta5">5</div>
+      <div class="pregunta6">6</div>
+      <div class="pregunta7">7</div>
+      <div class="pregunta8">8</div>
+      <div class="pregunta9">9</div>
+      <div class="pregunta10">10</div>
+    </ul>
+  </ion-toolbar>
 </ion-header>
 
 <ion-content>
@@ -16,7 +31,7 @@
   <h3>¿CUANTO SABES SOBRE LA SEGUNDA GUERRA MUNDIAL?</h3>
   <p class="subtitulo">Demuestra tus conocimientos sobre la mayor contienda militar de la historia</p>
     <div class="container">
-      <p class="numero">1 / 10</p>
+      <p class="numero"id="1">1 / 10</p>
       <h1 class="titulo-cuestionario"id="cambio">¿COMÓ COMENZÓ LA SEGUNDA GUERRA MUNDIAL?</h1>
       <ion-radio-group value="primerPregunta">
         <ion-item>
@@ -36,7 +51,7 @@
       <p *ngIf="incorrect"style="color:red;margin-left: 80px;">Respuesta incorrecta!!</p>
     </div>
     <div class="container">
-      <p id="cambio"class="numero">2 / 10</p>
+      <p id="2"class="numero">2 / 10</p>
       <h1 class="titulo-cuestionario">¿EN QUÉ AÑO ACCEDIÓ HITLER Y EL PARTIDO NACIONAL-SOCIALISTA AL PODER?</h1>
       <ion-radio-group value="segundaPregunta">
         <ion-item>
@@ -56,7 +71,7 @@
       <p *ngIf="incorrect2"style="color:red;margin-left: 80px;">Respuesta incorrecta!!</p>
     </div>
     <div class="container">
-      <p id="cambio"class="numero">3 / 10</p>
+      <p id="3"class="numero">3 / 10</p>
       <h1 class="titulo-cuestionario">¿CON QUÉ NOMBRE FUE CONOCIDO EL PACTO DE NO AGRESIÓN ENTRE ALEMANES Y SOVIÉTICOS?
       </h1>
       <ion-radio-group value="terceraPregunta">
@@ -119,5 +134,110 @@
       </ion-radio-group>
       <p *ngIf="show5"style="color:green;margin-left: 80px;">Correcto!!</p>
       <p *ngIf="incorrect5"style="color:red;margin-left: 80px;">Respuesta incorrecta!!</p>
+    </div>
+    <div class="container">
+      <p id="cambio"class="numero">6 / 10</p>
+      <h1 class="titulo-cuestionario">¿CÓMO SE LLAMABA EL AVIÓN QUE TRANSPORTÓ LA BOMBA ATÓMICA QUE SE LANZÓ SOBRE HIROSHIMA?
+      </h1>
+      <ion-radio-group value="cuartaPregunta">
+        <ion-item>
+          <ion-text>Little Boy</ion-text>
+          <ion-radio slot="start" value="2.1"(click)="incorrect6=true"(click)="show6=false"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-text>Enola Gay</ion-text>
+          <ion-radio slot="start" value="2.2"(click)="incorrect6=false"(click)="show6=true"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-text>Little Wings</ion-text>
+          <ion-radio slot="start" value="2.3"(click)="show6=false"(click)="incorrect6=true"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+      <p *ngIf="show6"style="color:green;margin-left: 80px;">Correcto!!</p>
+      <p *ngIf="incorrect6"style="color:red;margin-left: 80px;">Respuesta incorrecta!!</p>
+    </div>
+    <div class="container">
+      <p id="cambio"class="numero">7 / 10</p>
+      <h1 class="titulo-cuestionario">¿QUÉ REPRESENTA ESTA FAMOSA IMAGEN DE LA SEGUNDA GUERRA MUNDIAL?
+      </h1>
+      <ion-radio-group value="cuartaPregunta">
+        <ion-item>
+          <ion-text>Soldados americanos tras ganar la batalla de Normandía</ion-text>
+          <ion-radio slot="start" value="2.1"(click)="incorrect7=true"(click)="show7=false"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-text>Soldados americanos tras conquistar Berlín</ion-text>
+          <ion-radio slot="start" value="2.2"(click)="incorrect7=true"(click)="show7=false"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-text>Soldados americanos tras la batalla de Iwo Jima</ion-text>
+          <ion-radio slot="start" value="2.3"(click)="show7=true"(click)="incorrect7=false"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+      <p *ngIf="show7"style="color:green;margin-left: 80px;">Correcto!!</p>
+      <p *ngIf="incorrect7"style="color:red;margin-left: 80px;">Respuesta incorrecta!!</p>
+    </div>
+    <div class="container">
+      <p id="cambio"class="numero">8 / 10</p>
+      <h1 class="titulo-cuestionario">¿CÓMO SE LLAMA LA MÁQUINA QUE UTILIZABAN LOS ALEMANES PARA ENCRIPTAR SUS MENSAJES Y QUE LOS ALIADOS NO SUPIERAN QUÉ DECÍAN?
+      </h1>
+      <ion-radio-group value="cuartaPregunta">
+        <ion-item>
+          <ion-text>Enigma</ion-text>
+          <ion-radio slot="start" value="2.1"(click)="incorrect8=false"(click)="show8=true"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-text>Die Maschine (La Máquina en alemán)</ion-text>
+          <ion-radio slot="start" value="2.2"(click)="incorrect8=true"(click)="show8=false"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-text>Unübersetzbar (intraducible en alemán)</ion-text>
+          <ion-radio slot="start" value="2.3"(click)="show8=false"(click)="incorrect8=true"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+      <p *ngIf="show8"style="color:green;margin-left: 80px;">Correcto!!</p>
+      <p *ngIf="incorrect8"style="color:red;margin-left: 80px;">Respuesta incorrecta!!</p>
+    </div>
+    <div class="container">
+      <p id="cambio"class="numero">9 / 10</p>
+      <h1 class="titulo-cuestionario">¿CUÁL FUE EL ÚLTIMO PAÍS EN RENDIRSE CONCLUYENDO DE ESTE MODO LA SEGUNDA GUERRA MUNDIAL?
+      </h1>
+      <ion-radio-group value="cuartaPregunta">
+        <ion-item>
+          <ion-text>Alemania</ion-text>
+          <ion-radio slot="start" value="2.1"(click)="incorrect9=true"(click)="show9=false"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-text>Italia</ion-text>
+          <ion-radio slot="start" value="2.2"(click)="incorrect9=true"(click)="show9=false"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-text>Japón</ion-text>
+          <ion-radio slot="start" value="2.3"(click)="show9=true"(click)="incorrect9=false"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+      <p *ngIf="show9"style="color:green;margin-left: 80px;">Correcto!!</p>
+      <p *ngIf="incorrect9"style="color:red;margin-left: 80px;">Respuesta incorrecta!!</p>
+    </div>
+    <div class="container">
+      <p id="cambio"class="numero">10 / 10</p>
+      <h1 class="titulo-cuestionario">EL HOLOCAUSTO, EL ASESINATO MASIVO Y SISTEMÁTICO DE POBLACIÓN JUDÍA ¿CON CUÁNTAS VIDAS TERMINÓ?
+      </h1>
+      <ion-radio-group value="cuartaPregunta">
+        <ion-item>
+          <ion-text>Entre 2.000.000 y 3.000.000 de personas fueron ejecutadas en el Holocausto</ion-text>
+          <ion-radio slot="start" value="2.1"(click)="incorrect10=true"(click)="show10=false"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-text>Entre 5.900.000 y 7.100.000 personas fueron asesinadas vilmente</ion-text>
+          <ion-radio slot="start" value="2.2"(click)="incorrect10=false"(click)="show10=true"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-text>Entre 15.00.000 y 18.000.000 personas fueron asesinadas en el Holocausto</ion-text>
+          <ion-radio slot="start" value="2.3"(click)="show10=false"(click)="incorrect10=true"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+      <p *ngIf="show10"style="color:green;margin-left: 80px;">Correcto!!</p>
+      <p *ngIf="incorrect10"style="color:red;margin-left: 80px;">Respuesta incorrecta!!</p>
     </div>
 </ion-content>
